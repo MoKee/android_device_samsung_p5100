@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012 The MoKee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/mk/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := p5100
@@ -24,15 +24,15 @@ PRODUCT_RELEASE_NAME := p5100
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p5100/full_p5100.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p5100
-PRODUCT_NAME := cm_p5100
+PRODUCT_NAME := mk_p5100
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P5100
 PRODUCT_MANUFACTURER := samsung
