@@ -117,3 +117,7 @@ BOARD_CHARGER_RES := device/samsung/p5100/res/charger
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/p51xx/BoardConfigVendor.mk
+
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
