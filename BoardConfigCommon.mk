@@ -50,6 +50,9 @@ BOARD_USE_TI_ENHANCED_DOMX := true
 # Hardware tunables
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 
+# HWComposer
+TARGET_HAS_WAITFORVSYNC := false
+
 # Egl
 BOARD_EGL_CFG := device/samsung/p5100/configs/egl.cfg
 USE_OPENGL_RENDERER := true
